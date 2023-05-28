@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap');
+
+* {
+  color:darkturquoise;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color:slategrey;
+}
+
+.side-bar {
+  background-color:darkslategray;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  border: solid 0.5px snow;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav {
+  border-top: solid 0.5px snow;
+  padding: 10px;
+  margin: 10px;
+}
+
+.history {
+  padding: 10px;
+  margin: 10px;
+  height: 100%
+}
+
+.history li {
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+  width: 100%
+}
+
