@@ -1,7 +1,7 @@
 const PORT = 8000;
 const express = require("express");
 const cors = require("cors");
-require(".env").config(); //to hide API_KEY in the .env file
+require('.env').config(); //to hide API_KEY in the .env file
 const app = express();
 app.use(express.json()); //allows you to use json from the frontend to the backend
 app.use(cors());
