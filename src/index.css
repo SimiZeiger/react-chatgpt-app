@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap");
 
 * {
-  color:#fff;
-  font-family: 'Open Sans', sans-serif; 
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 .app {
-  background-color:#343541;;
+  background-color: #343541;
   display: flex;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 button {
-  border: solid 0.5px rgba(255, 255, 255, 0.5);;
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
   background-color: transparent;
   border-radius: 5px;
   padding: 10px;
@@ -41,7 +41,7 @@ nav {
 .history {
   padding: 10px;
   margin: 10px;
-  height: 100%
+  height: 100%;
 }
 
 .history li {
@@ -61,7 +61,7 @@ nav {
 }
 
 .info {
-  color:rgba(255, 255, 255, 0.5);;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   padding: 10px;
 }
@@ -78,30 +78,51 @@ nav {
   position: relative;
   width: 100%;
   max-width: 650px;
-  }
+}
 
-  input {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    font-size: 20px;;
-    padding: 12px 15px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
-      rgba(0, 0, 0, 0.05) 0 -12px 30px,
-      rgba(0, 0, 0, 0.05) 0 4px 6px,
-      rgba(0, 0, 0, 0.05) 0 12px 3px,
-      rgba(0, 0, 0, 0.05) 0 -3px 5px;
-                 
-  }
+input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px, rgba(0, 0, 0, 0.05) 0 -12px 30px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px, rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
 
-  input:focus {
-    outline: none;
-  }
+input:focus {
+  outline: none;
+}
 
-  #submit {
-    position: absolute;
-    bottom: 15px;
-    right: 0;
-    cursor: pointer
-  }
+#submit {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  cursor: pointer;
+}
+
+.feed {
+  overflow: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.feed li {
+  display: flex;
+  background-color: #444654;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feed p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role {
+  min-width: 100px
+}

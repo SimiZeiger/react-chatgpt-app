@@ -1,11 +1,12 @@
 const PORT = 8000;
 const express = require("express");
 const cors = require("cors");
+require(".env").config(); //to hide API_KEY in the .env file
 const app = express();
 app.use(express.json()); //allows you to use json from the frontend to the backend
 app.use(cors());
 
-const API_KEY = "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";
+const API_KEY = process.env.API_KEY;
 
 app.post("/completions", async (req, res) => {
   const options = {
@@ -16,7 +17,7 @@ app.post("/completions", async (req, res) => {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: "how are you?" }],
+      messages: [{ role: "user", content: req.body.message }],
       max_tokens: 100,
     }),
   };
