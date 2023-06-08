@@ -2,7 +2,7 @@
 
 ## Engage in interactive conversation with AI while your chat history is securely saved! Choose whether you want to start a new chat or pick up where you left off.
 
-### To start up app: 
+### Run the following commands in your terminal to start the app:
 ### 1. 'npm run start:backend'  
 ### 2. 'npm run start:frontend'
                     
